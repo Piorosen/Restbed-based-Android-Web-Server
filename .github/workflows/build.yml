@@ -22,5 +22,7 @@ jobs:
       - name: Run Build Script
         run: |
          ls
+         echo $PATH
+         echo $pwd
          echo $(pwd)/components/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin
          make build
