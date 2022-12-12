@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install unzip
+sudo apt install unzip ninja-build cmake
 
 git submodule update --init --recursive
 

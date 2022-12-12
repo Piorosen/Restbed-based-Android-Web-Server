@@ -11,11 +11,11 @@ SET(BUILD_SSL OFF)
 SET(BUILD_TESTS OFF)
 
 
-add_subdirectory(lib/restbed)
-include_directories(lib/restbed/source)
+add_subdirectory(3rdparty/restbed)
+include_directories(3rdparty/restbed/source)
 
 add_executable(chacha
-main.cpp
+    main.cpp
 )
 
 target_link_libraries(chacha restbed-static)
