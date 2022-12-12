@@ -20,6 +20,7 @@ jobs:
          export PATH=$(pwd)/components/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin:$PATH
         
       - name: Run Build Script
-        make build
-        ls ./build
-        ls
+        run: |
+         make build
+         ls ./build
+         ls
