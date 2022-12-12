@@ -1,0 +1,22 @@
+name: NDK Build Test (CI)
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout
+      
+      - name: Run Build Script
+        run: |
+         sudo apt install -y git unzip ninja-build cmake 
+         chmod +x bootstrap.sh
+         ./bootstrap.sh
+         make build
+         ls ./build
+         ls
