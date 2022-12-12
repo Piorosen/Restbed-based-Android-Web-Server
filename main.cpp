@@ -20,6 +20,8 @@ void post_method_handler( const shared_ptr< Session > session )
 
 int main( const int, const char** )
 {
+    system("uname -a");
+    
     auto resource = make_shared< Resource >( );
     resource->set_path( "/resource" );
     resource->set_method_handler( "POST", post_method_handler );
