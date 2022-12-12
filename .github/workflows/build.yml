@@ -13,14 +13,17 @@ jobs:
         name: Checkout
       
       - name: Run Bootstrap Script
+        shell: bash
         run: |
          sudo apt install -y git unzip ninja-build cmake 
          chmod +x bootstrap.sh
          ./bootstrap.sh
-         export PATH=$(pwd)/components/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin:$PATH
+         source ~/.bashrc
         
       - name: Run Build Script
+        shell: bash
         run: |
+          export PATH=$(pwd)/components/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin:$PATH
          ls
          echo $PATH
          pwd
