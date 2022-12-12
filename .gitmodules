@@ -1,0 +1,3 @@
+[submodule "3rdparty/restbed"]
+	path = 3rdparty/restbed
+	url = https://github.com/Corvusoft/restbed
