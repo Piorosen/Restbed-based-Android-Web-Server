@@ -1,4 +1,4 @@
-.PHONY build
+.PHONY: build
 build:
 	if ! [ -d "build" ]; then \
 		mkdir build; \
