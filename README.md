@@ -22,7 +22,7 @@ $ make build
 $ adb devices | grep device
 # default value: ./build/chacha, because project name is chacha.
 # adb push ${executable file: chacha} /data/local/tmp
-$ adb push chacha /data/local/tmp
+$ adb push ./build/chacha /data/local/tmp
 $ adb shell chmod +x /data/local/tmp/chacha
 $ adb shell /data/local/tmp/chacha
 ```
