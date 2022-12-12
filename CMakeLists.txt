@@ -7,9 +7,8 @@ SET(CMAKE_C_COMPILER "aarch64-linux-android21-clang")
 
 project(chacha)
 
-SET(BUILD_SSL OFF)
-SET(BUILD_TESTS OFF)
-
+SET(BUILD_SSL OFF CACHE BOOL "disable ssl")
+SET(BUILD_TESTS OFF CACHE BOOL "disable tests")
 
 add_subdirectory(3rdparty/restbed)
 include_directories(3rdparty/restbed/source)
