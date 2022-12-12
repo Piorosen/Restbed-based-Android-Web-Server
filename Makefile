@@ -5,7 +5,7 @@ build:
 	fi
 	
 	cd build && \
-	cmake .. -G Ninja && \
+	cmake -DCMAKE_BUILD_TYPE=Release -G Ninja ..   && \
 	ninja
 
 	echo "build success" 
