@@ -17,6 +17,7 @@ jobs:
          sudo apt install -y git unzip ninja-build cmake 
          chmod +x bootstrap.sh
          ./bootstrap.sh
+         source ~/.bashrc
          make build
          ls ./build
          ls
